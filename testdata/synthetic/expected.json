@@ -1,0 +1,82 @@
+{
+  "prusa_cube.gcode": {
+    "layers": 10,
+    "z_max": 2.0,
+    "bounds_min": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "bounds_max": [
+      20.0,
+      20.0,
+      2.0
+    ],
+    "filament_mm": 344.47,
+    "time_s": 309
+  },
+  "bambu_cube.gcode": {
+    "layers": 10,
+    "z_max": 2.0,
+    "bounds_min": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "bounds_max": [
+      20.0,
+      20.0,
+      2.0
+    ],
+    "filament_mm": 344.47,
+    "time_s": 309
+  },
+  "cura_cube.gcode": {
+    "layers": 10,
+    "z_max": 2.0,
+    "bounds_min": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "bounds_max": [
+      20.0,
+      20.0,
+      2.0
+    ],
+    "filament_mm": 344.47,
+    "time_s": 309
+  },
+  "relative_e_cube.gcode": {
+    "layers": 10,
+    "z_max": 2.0,
+    "bounds_min": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "bounds_max": [
+      20.0,
+      20.0,
+      2.0
+    ],
+    "filament_mm": 344.47,
+    "time_s": 309
+  },
+  "edge_cases.gcode": {
+    "layers": 10,
+    "z_max": 2.0,
+    "bounds_min": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "bounds_max": [
+      20.0,
+      20.0,
+      2.0
+    ],
+    "filament_mm": 344.7,
+    "time_s": 309
+  }
+}

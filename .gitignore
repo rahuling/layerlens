@@ -1,0 +1,17 @@
+# Rust build output
+/target/
+
+# Local G-code and model files (samples belong in testdata/ only if licence-clean)
+*.gcode
+!testdata/**/*.gcode
+*.3mf
+*.stl
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env

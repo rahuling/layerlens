@@ -4,7 +4,7 @@
 
 LayerLens is a free, offline G-code viewer for Windows. Open a file, scrub through the layers, play the print back, and check the time and filament before you start. It's fast on large files, sends no data anywhere, and needs no install.
 
-> 🚧 Early development. Nothing to download yet. See [docs/ROADMAP.md](docs/ROADMAP.md).
+> 🚧 Early development. Nothing to download yet. Project site: https://rahuling.github.io/layerlens/ · Roadmap: [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## Planned features
 

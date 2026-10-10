@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LayerLens: see every layer before you print</title>
+<meta name="description" content="LayerLens is a free, open-source, offline G-code viewer for Windows. Scrub through layers, check print time and filament, and catch problems before the first layer goes down.">
+<meta name="theme-color" content="#14171C">
+<meta property="og:title" content="LayerLens: see every layer before you print">
+<meta property="og:description" content="A free, open-source, offline G-code viewer for Windows.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="LayerLens home">
+      <span class="brand-dot" aria-hidden="true"></span>LayerLens
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="https://github.com/rahuling/layerlens">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero wrap" id="top">
+  <div class="hero-copy">
+    <p class="status"><span class="status-dot" aria-hidden="true"></span>In development · v1.0 planned</p>
+    <h1>Open any G-code file and see every layer before you print.</h1>
+    <p class="lede">LayerLens is a free, open-source viewer for Windows. Scrub through layers, check print time and filament, and catch problems before the first layer goes down.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/rahuling/layerlens">View on GitHub</a>
+      <a class="btn btn-ghost" href="#roadmap">See the roadmap</a>
+    </div>
+    <p class="fine">MIT licence · no account · built to run offline</p>
+  </div>
+
+  <figure class="viewer" aria-label="Preview of the LayerLens viewer">
+    <div class="viewer-bar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="file">benchy_0.2mm_PLA.gcode</span>
+    </div>
+    <svg viewBox="0 0 520 400" role="img" aria-label="Stacked toolpath layers rendered in 3D, with infill on the lower layers">
+      <defs>
+        <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="10" stroke="#4F8CF0" stroke-width="1.4"/>
+        </pattern>
+      </defs>
+      <g transform="translate(-10 -10)">
+        <line x1="170" y1="120" x2="110" y2="330" stroke="#5C6575" stroke-width="1.5" stroke-dasharray="6 6"/>
+        <polygon points="130,330 370,330 410,290 170,290" fill="url(#hatch)" stroke="#FF7A3D" stroke-width="2" opacity="0.9"/>
+        <polygon points="130,304 370,304 410,264 170,264" fill="none" stroke="#FF7A3D" stroke-width="2"/>
+        <polygon points="142,298 358,298 398,268 182,268" fill="url(#hatch)" opacity="0.45"/>
+        <polygon points="130,278 370,278 410,238 170,238" fill="none" stroke="#FF7A3D" stroke-width="2"/>
+        <polygon points="142,272 358,272 398,242 182,242" fill="url(#hatch)" opacity="0.45"/>
+        <polygon points="130,252 370,252 410,212 170,212" fill="none" stroke="#FF7A3D" stroke-width="2"/>
+        <polygon points="130,226 370,226 410,186 170,186" fill="none" stroke="#FF7A3D" stroke-width="2" opacity="0.5"/>
+        <polygon points="130,200 370,200 410,160 170,160" fill="none" stroke="#FF7A3D" stroke-width="2" opacity="0.3"/>
+      </g>
+    </svg>
+    <figcaption class="viewer-foot">
+      <span>layer 184 of 248</span><span>36.80 mm</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="band" aria-label="What it shows">
+  <ul class="wrap band-list">
+    <li><strong>Layer by layer</strong> scrub the height and see exactly what prints at each step</li>
+    <li><strong>Time and filament</strong> totals and per-layer numbers, from the file itself</li>
+    <li><strong>Built for Windows</strong> one small download, no installer, no admin rights</li>
+  </ul>
+</section>
+
+<section class="section wrap" id="features" aria-labelledby="features-title">
+  <h2 id="features-title">What it does</h2>
+  <p class="section-lede">A G-code file is a long list of instructions. LayerLens turns it into something you can look at, so you catch problems on screen instead of halfway through a 14-hour print.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>See every layer</h3>
+      <p>Drag the slider to any height. The toolpath updates as you move, so you can check supports, seams and bridges before printing.</p>
+    </article>
+    <article class="card">
+      <h3>Colour by feature</h3>
+      <p>Outer walls, inner walls, infill, support and travel moves each get their own colour, taken from the slicer's own labels.</p>
+    </article>
+    <article class="card">
+      <h3>Know the cost</h3>
+      <p>Print time, filament length and weight, and travel distance, with the source of each number shown so you know what to trust.</p>
+    </article>
+    <article class="card">
+      <h3>Play it back</h3>
+      <p>Animate the print at any speed to follow the nozzle through the sequence, and spot wasted moves or odd paths.</p>
+    </article>
+    <article class="card">
+      <h3>Private by design</h3>
+      <p>Your files stay on your machine. No account, no uploads, no telemetry. The goal is to work with no internet connection at all.</p>
+    </article>
+    <article class="card">
+      <h3>Open source</h3>
+      <p>MIT licensed, written in Rust. Read the code, report a bug, or add support for your slicer or printer.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title">How it works</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-num" aria-hidden="true">1</span>
+        <h3>Open the file</h3>
+        <p>Drag a <code>.gcode</code> file onto the window, or use File, Open. Large files are supported as a goal for v1.0.</p>
+      </li>
+      <li>
+        <span class="step-num" aria-hidden="true">2</span>
+        <h3>Scrub the layers</h3>
+        <p>Move the slider or press play. Look for supports in the wrong place, long travels and anything that doesn't match your model.</p>
+      </li>
+      <li>
+        <span class="step-num" aria-hidden="true">3</span>
+        <h3>Check the numbers</h3>
+        <p>Compare the time and filament against what you expected, then send the job to your printer with confidence.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section wrap" id="roadmap" aria-labelledby="roadmap-title">
+  <h2 id="roadmap-title">Roadmap</h2>
+  <p class="section-lede">LayerLens is being built in the open. Here is where it stands.</p>
+  <ol class="timeline">
+    <li class="done"><span class="tl-state">Done</span><h3>Plan</h3><p>Product requirements, technical design and test samples are written and public.</p></li>
+    <li class="now"><span class="tl-state">In progress</span><h3>Foundations</h3><p>Project setup, the G-code parser and a test suite that checks it against known results.</p></li>
+    <li><span class="tl-state">Next</span><h3>2D viewer</h3><p>Open a file, step through layers from the top down, and see the first summary numbers.</p></li>
+    <li><span class="tl-state">Planned</span><h3>3D view and stats</h3><p>Orbit the model, colour by feature, and show time and filament with playback.</p></li>
+    <li><span class="tl-state">Planned</span><h3>v1.0 release</h3><p>A single Windows download, tested on sample files from several slicers.</p></li>
+    <li><span class="tl-state">Later</span><h3>Compare versions</h3><p>See what changed between two slices, layer by layer.</p></li>
+  </ol>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Want to help?</h2>
+      <p>Send a G-code file from your slicer or printer that we don't support yet, or tell us what would make your prints easier to check.</p>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/rahuling/layerlens/issues/new">Open an issue</a>
+      <a class="btn btn-ghost" href="https://github.com/rahuling/layerlens">Star on GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p><span class="brand-dot" aria-hidden="true"></span> LayerLens · MIT licence · made by rahuling</p>
+    <ul>
+      <li><a href="https://github.com/rahuling/layerlens">Source</a></li>
+      <li><a href="https://github.com/rahuling/layerlens/blob/main/docs/PRD.md">Product spec</a></li>
+      <li><a href="https://github.com/rahuling/layerlens/blob/main/LICENSE">Licence</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

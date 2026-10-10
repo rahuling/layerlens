@@ -7,4 +7,6 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
+eframe = "0.36.2"
 gcode = { path = "../gcode" }
+rfd = "0.17.2"

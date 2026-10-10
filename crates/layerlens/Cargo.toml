@@ -1,0 +1,10 @@
+[package]
+name = "layerlens"
+description = "Open-source G-code viewer for Windows"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+gcode = { path = "../gcode" }

@@ -309,7 +309,7 @@ def main():
             f.write("\n".join(lines) + "\n")
         manifest[name] = expected
         print(f"wrote {out / name}")
-    with open(out / "expected.json", "w", encoding="utf-8") as f:
+    with open(out / "expected.json", "w", encoding="utf-8", newline="\n") as f:
         json.dump(manifest, f, indent=2)
         f.write("\n")
     print(f"wrote {out / 'expected.json'}")
